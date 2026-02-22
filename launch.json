@@ -1,0 +1,41 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Math QA",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_math_edu_skill.py",
+      "args": [
+        "--skill", "math_qa",
+        "--task-file", "${workspaceFolder}/inputs/qa_task.txt",
+        "--output-file", "${workspaceFolder}/outputs/qa_result.txt"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Math Diagnosis",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_math_edu_skill.py",
+      "args": [
+        "--skill", "math_diagnosis",
+        "--task-file", "${workspaceFolder}/inputs/diagnosis_task.txt",
+        "--output-file", "${workspaceFolder}/outputs/diagnosis_result.txt"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Math Tutoring",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_math_edu_skill.py",
+      "args": [
+        "--skill", "math_tutoring",
+        "--task-file", "${workspaceFolder}/inputs/tutoring_task.txt",
+        "--output-file", "${workspaceFolder}/outputs/tutoring_result.txt"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}
